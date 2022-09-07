@@ -77,3 +77,46 @@ counter += 5
 counter += 3
 console.log(counter)
 // Practice with all types of operators.
+
+var age = 10
+if (age >= 65) {
+    console.log("You get your income from your pension")
+}
+else if (age < 65 && age >= 18) {
+    console.log("Each month you get a salary")
+}
+else if(age < 18) {
+    console.log("You get an allowance")
+}
+else {
+    console.log("The value of the age variable is not numerical")
+}
+
+var day = "Sunday"
+switch(day) {
+    case 'Monday':
+        console.log("Eat Food");
+        break;
+    case 'Tuesday':
+        console.log("Drive")
+        break;
+    case 'Wednesday':
+        console.log("Sleep")
+        break;
+    case 'Thursday':
+        console.log("Jump")
+        break;
+    case 'Friday':
+        console.log("Run")
+        break;
+    case 'Saturday':
+        console.log("Skip")
+        break;
+    case 'Sunday':
+        console.log("Sing")
+        break;
+    default:
+        console.log('There is no such day')
+    
+}
+// Conditional statements.
