@@ -117,6 +117,58 @@ switch(day) {
         break;
     default:
         console.log('There is no such day')
-    
 }
 // Conditional statements.
+
+for (var i = 5; i > 0; i--) {
+    console.log(i);
+};
+console.log('Countdown Finished!') // for loop countdown to zero.
+var i = 0
+while (i < 6) {
+    console.log(i);
+    i = i + 1;
+}
+console.log('Counting Completed!') // while loop.
+for (var i =1; i <= 10; i++) {
+    if (i == 1) {
+        console.log("Gold Medal")
+    }
+    else if (i == 2) {
+        console.log("Silver Medal")
+    }
+    else if (i == 3) {
+        console.log("Bronze Medal")
+    }
+    else {
+        console.log(i)
+    } 
+} // nested loop
+for (var i =1; i <= 10; i++) {
+    switch(i) {
+        case 1:
+            console.log("Gold Medal")
+            break;
+        case 2:
+            console.log("Silver Medal")
+            break;
+        case 3:
+            console.log("Bronze Medal")
+            break;
+        default:
+            console.log(i)
+    }   
+} // nested switch loop
+
+function letterFinder (word, match) {
+    for (var i = 0; i < word.length; i++) {
+        if (word[i] == match)
+            console.log('Found the', match, "at", i)
+        else {
+            console.log('---No match found at', i)
+        }
+    }
+}
+
+letterFinder("test","t") //functions with loop
+
