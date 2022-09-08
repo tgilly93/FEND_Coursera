@@ -123,13 +123,13 @@ switch(day) {
 for (var i = 5; i > 0; i--) {
     console.log(i);
 };
-console.log('Countdown Finished!') // for loop countdown to zero.
+console.log('Countdown Finished!') // For Loop countdown to zero.
 var i = 0
 while (i < 6) {
     console.log(i);
     i = i + 1;
 }
-console.log('Counting Completed!') // while loop.
+console.log('Counting Completed!') // While Loop.
 for (var i =1; i <= 10; i++) {
     if (i == 1) {
         console.log("Gold Medal")
@@ -172,3 +172,53 @@ function letterFinder (word, match) {
 
 letterFinder("test","t") //functions with loop
 
+function consoleStyler(color, background, fontSize, txt) {
+    var message = "%c" + txt;
+    var style = `color: ${color};`
+    style += `background: ${background};`
+    style += `font-size: ${fontSize};`
+   
+    console.log(message, style);
+    
+}
+function celebrateStyler(reason) {
+    var fontStyle = "color: tomato; font-size: 50px";
+    if (reason == "birthday") {
+        console.log(`%cHappy birthday`, fontStyle);
+    }
+    else if (reason == "champions") {
+        console.log(`%cCongrats on the title!`, fontStyle);
+    }
+    else {
+        console.log(message, style);
+    }
+    
+}
+consoleStyler('#1d5c63', '#ede6db', '40px', 'Congrats!')
+celebrateStyler('birthday')
+function styleAndCelebrate(color, background, fontSize, txt, reason) {
+    consoleStyler(color, background, fontSize, txt);
+    celebrateStyler(reason);
+}
+styleAndCelebrate('ef7c83','fae8e0', '30px', 'You made it!', 'champions') // Functional Programming
+
+class Cat {
+    UseMeow() {
+        console.log('Meow')
+    }
+}
+class Lion extends Cat {
+    UseMeow() {
+        super.UseMeow()
+        console.log("Roar")
+    }
+}
+class Kitten extends Cat {
+    UseMeow() {
+        console.log("Purr")
+    }
+}
+var jungleLion = new Lion();
+var youngKitten = new Kitten();
+jungleLion.UseMeow();
+youngKitten.UseMeow(); // Object Oriented Programming.
