@@ -222,3 +222,69 @@ var jungleLion = new Lion();
 var youngKitten = new Kitten();
 jungleLion.UseMeow();
 youngKitten.UseMeow(); // Object Oriented Programming.
+
+class Person {
+    constructor(name = "Tom", age = 20, energy = 100) {
+        this.name = name;
+        this.age = age;
+        this.energy = energy;
+    }
+    sleep() {
+        this.energy += 10;
+    }
+    doSomethingFun() {
+        this.energy -= 10;
+    }
+}
+class Worker extends Person {
+    constructor(name = "Tom", age = 20, energy = 100, xp = 0, hourlyWage = 10) {
+        super(name, age, energy);
+        this.xp = xp;
+        this.hourlyWage = hourlyWage;
+    }
+    goToWork() {
+        this.xp += 10;
+    }
+}
+function intern() {
+    var intern = new Worker("Bob", 21, 110, 0, 10)
+    intern.goToWork();
+    return intern;
+}
+function manager() {
+    var manager = new Worker("Alice", 30, 120, 100, 30);
+    manager.doSomethingFun();
+    return manager;
+} // Understanding hierarchy and making instances of objects within OOP. No output.
+
+var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake']
+function logDairy() {
+    for (key of dairy) {
+        console.log(key)
+    }
+}
+const animal = {
+
+    canJump: true
+    
+    };
+    
+    const bird = Object.create(animal);
+    
+    bird.canFly = true;
+    
+    bird.hasFeathers = true;
+    
+    function birdCan() {
+        for (key of Object.keys(bird)) {
+            console.log(key + ": " + bird[key])
+        }
+    }
+birdCan();
+    function animalCan() {
+        for (key in bird) {
+            console.log(key + ": " + bird[key])
+        }
+    } 
+animalCan();
+// Call on function for output. More OOP practice with with arrays and object literals.
