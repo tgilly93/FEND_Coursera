@@ -288,3 +288,5 @@ birdCan();
     } 
 animalCan();
 // Call on function for output. More OOP practice with with arrays and object literals.
+
+expect(concatStrings("123", "456")).toBe("123456");

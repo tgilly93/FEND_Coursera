@@ -1,0 +1,23 @@
+{
+  "name": "fend_coursera",
+  "version": "1.0.0",
+  "description": "FrontEnd Web Dev with Coursera",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgilly93/FEND_Coursera.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tgilly93/FEND_Coursera/issues"
+  },
+  "homepage": "https://github.com/tgilly93/FEND_Coursera#readme",
+  "devDependencies": {
+    "jest": "^29.0.2"
+  }
+}
